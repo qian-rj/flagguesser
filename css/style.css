@@ -1,0 +1,125 @@
+/*
+Typography
+---------------------------
+-[ Spacing (px) ]-
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+-[ Font Sizing (px) ]-
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  font-family: "Kanit", sans-serif;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+
+  font-size: 62.5%;
+}
+
+body {
+  background: rgb(226, 224, 224);
+  overflow: auto;
+  height: 100%;
+}
+
+*::selection {
+  background: none;
+  color: currentColor;
+}
+
+#score,
+#streak,
+#feedback {
+  cursor: default;
+}
+
+/* Navbar */
+.navbar {
+  background: url("https://www.pngarts.com/files/4/World-Map-Transparent.png")
+    center no-repeat;
+
+  padding: 1.2rem;
+  font-size: 1.6rem;
+}
+
+.navbar-brand {
+  font-size: 2.4rem;
+}
+
+/* Game */
+#game {
+  position: relative;
+
+  background: rgb(11, 0, 19) url("../images/game-bg.jpeg") right center
+    no-repeat;
+  padding: 10rem;
+  border-radius: 50px;
+  height: 60rem;
+  max-width: 100rem;
+  margin: 0 auto;
+  margin-top: 32px;
+  box-shadow: 2px 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+#feedback {
+  background: rgb(68, 66, 66);
+  width: 30rem;
+  padding: 0.8rem;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.6rem;
+}
+
+/* Game: User Answer Form */
+#user-answer-form {
+  display: flex;
+  align-items: center;
+}
+
+#user-answer {
+  padding-left: 1.2rem;
+  border-radius: 10px;
+  width: 50%;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin-right: 1.4rem;
+}
+
+#user-answer-form-btn-container {
+  display: flex;
+  justify-content: space-between;
+
+  display: inline-block;
+}
+
+#user-answer-form-btn-container button {
+  font-size: 1.4rem;
+}
+
+/* Game: Score */
+#score {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+#streak {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  margin-top: 2.4rem;
+  transition: opacity 1s !important;
+}
+
+#score,
+#streak {
+  color: white;
+  background: rgb(36, 36, 36);
+  border-radius: 20px;
+  padding: 0 2.4rem;
+  font-size: 5.2rem;
+  transition: color 1s;
+}
